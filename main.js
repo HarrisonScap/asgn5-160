@@ -37,7 +37,7 @@ function main() {
     const texLoader = new THREE.TextureLoader();
     const cubeLoader = new THREE.CubeTextureLoader();
 
-    gltfLoader.load('./assets/stove.gltf', function(gltf){
+    gltfLoader.load('stove.gltf', function(gltf){
 
         scene.add(gltf.scene);
         gltf.scene.rotation.y = -45;
@@ -48,22 +48,22 @@ function main() {
 
     const textureCube = [
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("./assets/brick.jpg"),
+            map: texLoader.load("brick.jpg"),
         }),
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("./assets/brick.jpg"),
+            map: texLoader.load("brick.jpg"),
         }),
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("./assets/brick.jpg"),
+            map: texLoader.load("brick.jpg"),
         }),
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("./assets/brick.jpg"),
+            map: texLoader.load("brick.jpg"),
         }),
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("./assets/brick.jpg"),
+            map: texLoader.load("brick.jpg"),
         }),
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("./assets/brick.jpg"),
+            map: texLoader.load("brick.jpg"),
         })
     ]
 
