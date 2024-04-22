@@ -1,9 +1,5 @@
 import * as THREE from 'three';
-//import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
-//import { TextureLoader } from 'three/addons/loaders/TextureLoader.js';
-import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
-
 
 /* This code was derived from the three.js fundamentals guide
 */
@@ -37,7 +33,7 @@ function main() {
     const texLoader = new THREE.TextureLoader();
     const cubeLoader = new THREE.CubeTextureLoader();
 
-    gltfLoader.load('stove.gltf', function(gltf){
+    gltfLoader.load("/stove.gltf", function(gltf){
 
         scene.add(gltf.scene);
         gltf.scene.rotation.y = -45;
@@ -48,22 +44,22 @@ function main() {
 
     const textureCube = [
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("brick.jpg"),
+            map: texLoader.load("/brick.jpg"),
         }),
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("brick.jpg"),
+            map: texLoader.load("/brick.jpg"),
         }),
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("brick.jpg"),
+            map: texLoader.load("/brick.jpg"),
         }),
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("brick.jpg"),
+            map: texLoader.load("/brick.jpg"),
         }),
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("brick.jpg"),
+            map: texLoader.load("/brick.jpg"),
         }),
         new THREE.MeshStandardMaterial({
-            map: texLoader.load("brick.jpg"),
+            map: texLoader.load("/brick.jpg"),
         })
     ]
 
